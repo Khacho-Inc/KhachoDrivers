@@ -1,11 +1,4 @@
-﻿/* Description
- * \file COM.cs
- * \brief Драйвер COM-порта.
- * \author Багдасарян Хачатур
- * \author Copyright (c) 2015 ПАО "Радиофизика"
- */
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO.Ports;
 using System.Linq;
