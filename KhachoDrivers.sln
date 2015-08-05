@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KhachoDrivers", "KhachoDrivers\KhachoDrivers.csproj", "{ECC4876F-7884-4DB4-8263-1223600D4919}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ECC4876F-7884-4DB4-8263-1223600D4919}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECC4876F-7884-4DB4-8263-1223600D4919}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECC4876F-7884-4DB4-8263-1223600D4919}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECC4876F-7884-4DB4-8263-1223600D4919}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
