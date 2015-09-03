@@ -97,7 +97,7 @@ namespace KhachoDrivers
 		/// <summary>
 		/// Освобождает все ресурсы, используемые объектом LenzeStendApplication.Drivers.COM.
 		/// </summary>
-		void Dispose();
+		new void Dispose();
 
 		/// <summary>
 		/// Возвращает текущий номер COM-порта.

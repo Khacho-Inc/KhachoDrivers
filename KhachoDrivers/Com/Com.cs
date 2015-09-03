@@ -111,7 +111,7 @@ namespace KhachoDrivers
 		/// <summary>
 		/// Лог сообщений.
 		/// </summary>
-		LogWPF messageLog;
+		ILog messageLog;
 
 		#endregion
 
@@ -142,7 +142,7 @@ namespace KhachoDrivers
 		/// Инициализирует новый экземпляр класса Drivers.COM с применением параметров по-умолчанию и логом сообщений.
 		/// </summary>
 		/// <param name="log">Лог сообщений.</param>
-		public Com(LogWPF log)
+		public Com(ILog log)
 		{
 			messageLog = log;
 		}
@@ -173,13 +173,8 @@ namespace KhachoDrivers
 		/// <param name="dataBits">Количество бит данных.</param>
 		/// <param name="stopBits">Количество стоповых битов.</param>
 		/// <param name="log">Лог сообщений.</param>
-		public Com(int num, int baudRate, Parity parity, int dataBits, StopBits stopBits, LogWPF log)
+		public Com(int num, int baudRate, Parity parity, int dataBits, StopBits stopBits, ILog log) : this(num, baudRate, parity, dataBits, stopBits)
 		{
-			this.num = num;
-			this.baudRate = baudRate;
-			this.parity = parity;
-			this.dataBits = dataBits;
-			this.stopBits = stopBits;
 			messageLog = log;
 		}
 
@@ -423,7 +418,7 @@ namespace KhachoDrivers
 		public void Dispose()
 		{
 			com.Close();
-// TODO: генерируем событие изменения состояния порта
+			IsOpen = com.IsOpen;
 			com.Dispose();
 		}
 
